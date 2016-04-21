@@ -19,6 +19,8 @@ else{
 }
 }' nohup.out
 ```
+
+```{R}
 mydata=read.table("result_tmp_2/result.txt",header = T,sep="\t");
 library(sm)
 mydata.factor=factor(mydata[,1],labels=c("Annealing plan 0.999","Annealing plan 0.9999","Annealing plan 0.99999","Annealing plan 0.999999"));
@@ -37,8 +39,10 @@ colfill=c(2:(1+length(levels(mydata.factor))))
 legend("topright",inset=.01,levels(mydata.factor),fill=colfill)
 
 boxplot(mydata[,3]~mydata[,1],data=mydata,xlab="Annealing plan",ylab="Time wasted(s)")
+```
 
-```{R}
+
+```{octave}
 cities=load('TSPdata.txt');
 xx=cities(order,1);
 yy=cities(order,2);

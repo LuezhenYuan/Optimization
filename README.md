@@ -1,8 +1,5 @@
-# Insteresting chpater in Reading Material
+# Simulated Annealing
 
-## <Algorithms Unplugged>
-1. 31 Dynamic Programming – Evolutionary Distance
-2. 41 Simulated Annealing
 
 ## Simulated Annealing
 1. Simulated annealing (SA) is a probabilistic technique for approximating the _global optimum_ of a given function.[1]
@@ -12,9 +9,10 @@
 5. _probabilistically_ decides between moving the system to state s' or staying in state s. These probabilities ultimately lead the system to move to states of _lower energy_.[1]
 6. this step is repeated until the system reaches a state that is good enough for the application, or until a given computation budget has been exhausted.[1]
 
-## Modeling simulated annealing as  arandom walk on a search graph
+## Modeling simulated annealing as a random walk on a search graph
 1. vertices are all possible states, edges are the candidate moves.
 2. The diameter of the search graph must be small.
+
 ## tiling game
 1. tiling game. the domino game.: as many neighboring sides of tiles of the same color as possible.
 2. exactly solve only for relatively small input size.
@@ -44,6 +42,7 @@
 4. Second approach: visit soome city at a different point in time.
 5. If the new one is better, we keep it, otherwise we return to the older tour.(only climbs upward.)
 6. the state space, the energy (goal) function E(), the candidate generator procedure neighbour(), the acceptance probability function P(), and the annealing schedule temperature() AND initial temperature.
+
 ### paper jogger.
 1. perfectly aligned stack of paper
 2. turn the vibration from strong to gentle.
@@ -64,6 +63,7 @@
 ### restarting of simulated annealing
 1. move back to a solution that was significantly better rather than always moving from the current state.
 2. restarting based on a fixed number of steps, based on whether the current energy is too high compared to the best energy obtained so far, restarting randomly, etc.
+
 ### 
 1. Boltzmann factor can be used as probability between two state.(代价函数,接受准则)
 
@@ -76,6 +76,7 @@
 5. Monte Carlo time step??? 
 6. draw figure in R
 7. draw 10 configuration (for p=0.9999)
+
 ## Thinking-The relationship between Monte Carlo simulatioin and simulated annealing
 1. tempering techniques, more efficient Monte Carlo algorithms
 2. Sometimes, an optimization problem can also be formulated as a Monte Carlo sampling problem.
